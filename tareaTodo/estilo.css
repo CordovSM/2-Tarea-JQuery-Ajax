@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+body{
+	background: white;
+	font-family: 'Quicksand', sans-serif;
+	text-align: center;
+	padding: 0;
+}
+
+.head{
+	padding: 3%;
+}
+
+.contenedor{
+	background: #6babdd;
+}
+
+.form input[type=text]{
+	padding: 10px;
+	width: 60%;
+	border-radius: 5px;
+}
+
+button{
+	background: #4a7a9f;
+	color: white;
+	border: 3px solid #2d516c;
+	border-radius: 5px;
+	width: 20%;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+button:hover{
+	border: 3px solid #437398;
+}
+
+.tasklist{
+	width: 98%;
+}
+
+.tasklist .list li{
+	border-bottom: 1px solid #ccc;
+	padding: 10px;
+}
+
+span{
+	text-decoration: none;
+	color: black;
+}
+span:hover{
+	color: #B00404;
+}

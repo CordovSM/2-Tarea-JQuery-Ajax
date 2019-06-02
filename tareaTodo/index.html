@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>To Do List</title>
+	<link rel="stylesheet" type="text/css" href="estilolista.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	
+	<script>
+		$(document).ready(function(){
+		  $("#importante").click(function(){
+			$("p").css("background-color", "red");
+		  });
+		});
+	</script>
+
+
+<script>
+	$(document).ready(function(){
+		$("#esconder").click(function(){
+			$("#list").hide();
+		});
+		$("#mostrar").click(function(){
+			$("#list").show();
+		});
+	});
+	</script>
+
+<script>
+	$(document).ready(function(){
+		$("#desplegar").click(function(){
+			
+			$("#opciones").fadeIn(3000);
+		});
+	});
+	</script>
+
+</head>
+<body>
+	<div class="contenedor">
+		<div class="head">
+			<h1>To-Do List</h1>
+		</div>
+		<form class="form" id="todoForm">
+			<input type="text" id="todoInput" placeholder="Add Task">
+		</form>
+			<br>
+			<br>
+			<div><button id="btn" onclick="agregarTodo()">Agregar Una Nueva Tarea</button></div>
+			<br>
+			<div><button id="desplegar" type="button" class="btn btn-default">Mostrar las opciones disponibles</button></div>
+			<br>
+
+			<div id="opciones" style = "display:none;">
+				<button id="importante" type="button" class="btn btn-danger">Marcar las tareas como importantes</button>
+				<button id="esconder" type="button" class="btn btn-info" >Esconder la lista</button>
+				<button id="mostrar"  type="button" class="btn btn-success" >Mostrar la lista</button>
+			</div>
+		
+	</div>
+	<div class="tasklist">
+	<ol id="list" class="list">
+	</ol>
+	</div>
+	<script type="text/javascript" src="lista.js"></script>	
+</body>
+</html>
