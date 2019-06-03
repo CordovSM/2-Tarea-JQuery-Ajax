@@ -33,7 +33,7 @@ function marcar(e){
 }
 
 function eliminar(e){
-	var r = confirm("Are you sure to delete this item?");// pregunta si el usuario esta seguro de eliminar el task de la lista y si confirma lo
+	var r = confirm("Are you sure to delete this item?");
 	if(r == true ){
 	var lista = document.getElementById("list");
 	lista.removeChild(e.parentNode);
@@ -43,7 +43,7 @@ function eliminar(e){
 
 $(document).ready(function(){
 	$("#importante").click(function(){
-	  $("p").css("background-color", "red");
+	  $("p").css("background-color", "#e6fff9");
 	});
   });
 
