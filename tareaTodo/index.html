@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<title>To Do List</title>
-	<link rel="stylesheet" type="text/css" href="estilolista.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-	
-	<script>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet"> 
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- <script>
 		$(document).ready(function(){
 		  $("#importante").click(function(){
 			$("p").css("background-color", "red");
@@ -34,22 +36,26 @@
 			$("#opciones").fadeIn(3000);
 		});
 	});
-	</script>
+	</script> -->
 
 </head>
-<body>
+<body class="container">
 	<div class="contenedor">
 		<div class="head">
-			<h1>To-Do List</h1>
+			<h1 class="tam">TODO LIST</h1>
 		</div>
 		<form class="form" id="todoForm">
 			<input type="text" id="todoInput" placeholder="Add Task">
 		</form>
 			<br>
 			<br>
-			<div><button id="btn" onclick="agregarTodo()">Agregar Una Nueva Tarea</button></div>
+		<div>
+			<button id="btn" onclick="agregarTodo()" type="button" class='btn btn-dark'>Add New Task</button>
+		</div>
 			<br>
-			<div><button id="desplegar" type="button" class="btn btn-default">Mostrar las opciones disponibles</button></div>
+		<div>
+			<button id="desplegar" type="button" class="btn btn-outline-dark">All Options</button>
+		</div>
 			<br>
 
 			<div id="opciones" style = "display:none;">
@@ -59,10 +65,14 @@
 			</div>
 		
 	</div>
-	<div class="tasklist">
-	<ol id="list" class="list">
-	</ol>
+	<br>
+	<div>
+		<div  class="tasklist">
+			<ol id="list" class="list"></ol>
+		</div>
 	</div>
-	<script type="text/javascript" src="lista.js"></script>	
+	<script type="text/javascript" src="lista.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>	
 </body>
 </html>

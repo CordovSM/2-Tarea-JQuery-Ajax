@@ -1,12 +1,16 @@
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
-
 body{
 	background: white;
-	font-family: 'Quicksand', sans-serif;
-	text-align: center;
+	font-family: 'Muli', sans-serif;
 	padding: 0;
+}
+
+.tam{
+	color: white;
+	font-weight: bold;
+	font-size: 35pt;
+	letter-spacing: 3pt;
 }
 
 .head{
@@ -14,42 +18,43 @@ body{
 }
 
 .contenedor{
-	background: #6babdd;
+	background: lightslategray;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	text-align: center;
 }
 
 .form input[type=text]{
 	padding: 10px;
-	width: 60%;
+	width: 55%;
 	border-radius: 5px;
 }
 
-button{
-	background: #4a7a9f;
-	color: white;
-	border: 3px solid #2d516c;
-	border-radius: 5px;
-	width: 20%;
-	padding: 10px;
-	margin-bottom: 20px;
-}
-
-button:hover{
-	border: 3px solid #437398;
+input:hover{
+	border: 3px solid darkslategray;
 }
 
 .tasklist{
-	width: 98%;
+	width: 55%;
+	justify-content: center;
+	text-align: center;
+	margin: auto;
 }
 
-.tasklist .list li{
-	border-bottom: 1px solid #ccc;
-	padding: 10px;
+.list{
+	margin: 0;
+	padding: 0;
 }
 
-span{
-	text-decoration: none;
-	color: black;
+.alert-dark:hover{
+	background: lightslategray;
 }
+
+.rg {
+	float: right;
+	cursor: pointer;
+  }
+
 span:hover{
-	color: #B00404;
+	color: white;
 }
